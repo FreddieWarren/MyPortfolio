@@ -1,0 +1,80 @@
+.landingPage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  height: calc(100vh + 50px);
+  width: 100%;
+  background-image:  linear-gradient(rgba(100,100,100,0.35), rgba(100,100,100,0.35)),
+  url('../../images/rwfog.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.section {
+  min-height:100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/*--------------------HOME--------------------*/
+#home {
+
+}
+
+#home .location {
+  opacity: 0.5;
+}
+
+#home .margin {
+  margin: 0.5em;
+}
+
+.text h1 {
+  text-shadow: 0px 0px 2px #CDCDCD;
+  font-weight: 500;
+}
+
+.text h2 {
+  text-shadow: 0px 0px 2px #CDCDCD;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+@media screen and (max-width: 600px) {
+  .text h1 {
+    font-size: 1.5em;
+  }
+  .text h2 {
+    font-size: 1.1em;
+  }
+  .text {
+    font-size:13px;
+    line-height: 0.7;
+  }
+  .text p {
+    font-size: 0.7em;
+  }
+}
+
+/*---------------------ABOUT--------=-------------*/
+#about {
+
+}
+
+/*--------------------PROJECTS--------------------*/
+#projects {
+
+}
+
+/*--------------------CONTACT------------=--------*/
+#contact {
+
+}
+

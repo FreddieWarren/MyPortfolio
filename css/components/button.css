@@ -1,0 +1,42 @@
+.button {
+  border: 2px solid rgba(222, 166, 83, 1);
+  font-size: 13pt;
+  cursor: pointer;
+  color:rgba(222, 166, 83, 1);
+}
+
+.button-main {
+  margin-bottom: 160px;
+  padding: 5px 12px;
+}
+
+.button:hover {
+  background-color: rgba(251, 232, 153, 1);
+  border-color: rgba(251, 232, 153, 1);
+  color: black;
+  font-weight: bold;
+}
+
+.button:hover .arrow{
+  border-color: rgba(251, 232, 153, 1);
+  color: black;
+  font-weight: bold;
+  transform: rotate( 90deg);
+}
+
+.arrow {
+  transition: all .5s;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .button-main {
+    padding: 4px 8px;
+  }
+  .button {
+    font-size: 12px;
+  }
+}
+
+
