@@ -12,6 +12,13 @@
   align-items: center;
 }
 
+.flex-se {
+  padding: 70px 0 70px 0;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+
 .row {
   flex-direction: row;
 }

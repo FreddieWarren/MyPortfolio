@@ -11,12 +11,20 @@ nav {
   z-index: 99;
 }
 
-.link-wrap {
+.nav-menu {
   display: flex;
-  /*flex-direction: row;*/
+  flex-direction: row;
+
+  background-color: grey;
   max-width: 1200px;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  height: 0;
+  color: white;
+  background: #333;
+  transition: height 0.3s ease-out;
   width: 100%;
-  text-align: left;
 }
 
 .page-link {
@@ -27,6 +35,45 @@ nav {
 .page-link:hover {
   color: rgba(211, 129, 56, 1);
   cursor: pointer;
+}
+
+.active {
+  color: rgba(211, 129, 56, 1);
+}
+
+@media screen and (min-width: 600px) {
+  nav .fa-bars {
+    display: none;
+  }
+  .nav-menu {
+    background: none;
+    height: initial;
+    overflow: visible;
+    position: initial;
+    text-align: left;
+    transition: height 0.3s ease-out;
+  }
+}
+
+.fa-bars {
+  font-size: 30pt;
+  line-height: 36pt;
+  margin: auto 0;
+  position: absolute;
+  right: 5vw;
+  top: 0;
+}
+
+.fixed {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+nav .fixed .animate {
+  animation: popDown 3  s
 }
 
 .active {

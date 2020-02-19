@@ -10,3 +10,7 @@ body {
   text-align: left;
   background-color: #fff;
 }
+
+.disable-hover {
+  pointer-events: none;
+}
