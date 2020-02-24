@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 75px;
+  padding-top: 55px;
   padding-bottom: 25px;
 }
 
@@ -75,6 +75,7 @@ section .container {
 /*---------------------ABOUT--------=-------------*/
 #about {
   color: #5c5c5c;
+  position: relative;
 }
 
 .hobbies-banner {
@@ -144,8 +145,7 @@ section .container {
 .header h2{
   color: rgba(211, 129, 56, 1);
   font-size: 3.5em;
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0;
   font-weight: lighter;
 }
 
@@ -157,7 +157,6 @@ section .container {
 }
 
 .about-desc {
-    font-size: 1.3em ;
     line-height: 1.8em;
     text-align: justify;
     margin-bottom: 20px;
@@ -178,8 +177,7 @@ section .container {
  }
 
 .pill {
-  margin: 0.2em;
-  font-size: 1.4em;
+  margin: 0.1em;
   font-weight: lighter !important;
   color: white;
   padding: 4px 10px;
@@ -191,7 +189,7 @@ section .container {
 .hobbie-heading {
   font-weight: bold;
   font-size: 1.4em;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 6px 0;
 }
 
 .hobbie-pics-desk {

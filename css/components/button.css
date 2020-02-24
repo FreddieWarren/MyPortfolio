@@ -39,4 +39,31 @@
   }
 }
 
+.button-down {
+  border-radius: 50%;
+  width: fit-content;
+  padding: 7px 10px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.arrow-down {
+  transition: all .5s;
+  font-size: 30px;
+}
+
+.button:hover .arrow-down{
+  /*background-color: rgba(251, 232, 153, 1);*/
+  border-color: rgba(251, 232, 153, 1);
+  color: black;
+  font-weight: bold;
+}
+
+.button:hover .arrow{
+  /*background-color: rgba(251, 232, 153, 1);*/
+  border-color: rgba(251, 232, 153, 1);
+  color: black;
+  font-weight: bold;
+  transform: rotate( 90deg);
+}
 
