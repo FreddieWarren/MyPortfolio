@@ -115,33 +115,77 @@
       </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <!-- Projects -->
-      <div id="projects" class="section"></div>
+      <div id="projects" class="section">
+        <div class="project-container">
+          <div>
+            <h1 class="title"> My Projects</h1>
+          </div>
+          <div class="tabContainer">
+            <div class="buttonContainer">
+              <button onclick="showPanel(0,'#EA785B')">Podfast</button>
+              <button onclick="showPanel(1,'#2c4643')">Nomad</button>
+            </div>
+            <div class="tabPanel flex" >
+              <div class="tabContent">
+                <div class="leftContent">
+                  <p><strong>Podfast</strong> is a Progressive Web Application for mobile, which helps people on the go find and choose podcast episodes quickly.</p>
+                  <p>Built with Ruby on Rails, JavaScript, HTML, CSS/SCSS, Bootstrap, AJAX, PostgreSQL, ActiveRecord, SQL, Spotify / ListenNotes APIs, PG_search, Acts as votable, Acts as Followable, Social-Share, Figma (prototype and wireframe)</p>
+                <a href="http://podfast.me" target="_blank" class="podfastLink">Go to App</a>
+                </div>
+
+                <div class="rightContent">
+                  <div class="podfastMobileExample">
+                    <img class="podfast-img" src="images/podfast/podfast_1.jpg" alt="">
+                    <div class="card-info-onclick">
+                      <h4>Browse</h4>
+                      <p>The app home page, where users can find popular podcasts and browse new releases.</p>
+                      <p>Users can also click a button to pick a random episode or see episodes their friends have listened to.</p>
+                </div>
+                  </div>
+                  <div class="podfastMobileExample">
+                    <img class="podfast-img" src="images/podfast/podfast_2.jpg" alt="">
+                    <div class="card-info-onclick">
+                      <h4>Search</h4>
+                      <p>Introducing more flexibility into the user's search experience, with the option to select multiple categories, moods and set a duration in their preferences.</p>
+                    </div>
+                  </div>
+                  <div class="podfastMobileExample">
+                    <img class="podfast-img" src="images/podfast/podfast_3.jpg" alt="">
+                    <div class="card-info-onclick hidden">
+                      <h4>Results</h4>
+                      <p>Episodes are sorted by relevance and can be filtered to show most liked and listened to. </p>
+                      <p>Users can also see how many of their friends have liked each episode.</p>
+                    </div>
+                  </div>
+                  <div class="podfastMobileExample">
+                    <img class="podfast-img" src="images/podfast/podfast_4.jpg" alt="">
+                    <div class="card-info-onclick hidden">
+                      <h4>Episodes</h4>
+                      <p>Users can listen, like, comment, share and add episodes to 'pod'lists.</p>
+                     </div>
+                  </div>
+                  <div class="podfastMobileExample">
+                    <img class="podfast-img" src="images/podfast/podfast_5.jpg" alt="">
+                    <div class="card-info-onclick hidden">
+                      <h4>Podlists</h4>
+                      <p>'Pod'lists allow users to save multiple episodes from a search for later.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabPanel flex">
+              <div class="tabContent">
+                <div class="leftContent"></div>
+                <div class="rightContent"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 
       <!-- Contact -->
       <div id="contact" class="section"></div>
@@ -152,5 +196,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="javascript/page_scroll.js"></script>
     <script src="javascript/index.js"></script>
+    <script src="javascript/tabs.js"></script>
     </body>
 </html>
