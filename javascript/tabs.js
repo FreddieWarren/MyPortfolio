@@ -1,5 +1,5 @@
-var tabButtons=document.querySelectorAll(".tabContainer .buttonContainer button");
-var tabPanels=document.querySelectorAll(".tabContainer .tabPanel");
+var tabButtons=document.querySelectorAll("button");
+var tabPanels=document.querySelectorAll(".tab-panel");
 
 function showPanel(panelIndex, colorCode) {
   tabButtons.forEach(function(node){
