@@ -72,10 +72,3 @@ nav {
     width: 100%;
 }
 
-nav .fixed .animate {
-  animation: popDown 3  s
-}
-
-.active {
-  color: rgba(211, 129, 56, 1);
-}
