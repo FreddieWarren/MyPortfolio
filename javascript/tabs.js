@@ -15,4 +15,5 @@ function showPanel(panelIndex, colorCode) {
   tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
 
-showPanel(0, '#EA785B');
+// showPanel(0, '#EA785B');
+showPanel(0, 'var(--secondary-color)');

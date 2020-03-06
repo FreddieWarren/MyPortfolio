@@ -4,7 +4,7 @@ $("document").ready (function ($) {
   var height =$('#home').height();
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > height - 50){
+    if ($(this).scrollTop() > height -53){
       nav.addClass("fixed");
     } else {
       nav.removeClass("fixed");
@@ -18,7 +18,7 @@ var scrollTop = $(document).scrollTop();
 var anchors = $('body').find('.section');
 
 for (var i = 0; i < anchors.length; i++){
-  if (scrollTop > $(anchors[i]).offset().top - 50 && scrollTop < $(anchors[i]).offset().top + $(anchors[i]).height() - 50) {
+  if (scrollTop > $(anchors[i]).offset().top - 53 && scrollTop < $(anchors[i]).offset().top + $(anchors[i]).height() - 53) {
     $('nav div div[id="' + $(anchors[i]).attr('id') + '-link"]').addClass('active');
   } else {
     $('nav div div[id="' + $(anchors[i]).attr('id') + '-link"]').removeClass('active');
@@ -56,4 +56,3 @@ $(".contact-btn-nav").click(function() {
     scrollTop: $("#contact").offset().top
   }, 1000);
 });
-

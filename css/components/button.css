@@ -1,8 +1,9 @@
 .button {
-  border: 2px solid rgba(222, 166, 83, 1);
+  background: rgba(194, 194, 194, 0.2);
+  border: 2px solid var(--accent-color);
   font-size: 13pt;
   cursor: pointer;
-  color:rgba(222, 166, 83, 1);
+  color: var(--accent-color);
 }
 
 .button-main {
@@ -11,17 +12,19 @@
 }
 
 .button:hover {
-  background-color: rgba(251, 232, 153, 1);
-  border-color: rgba(251, 232, 153, 1);
-  color: black;
-  font-weight: bold;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--secondary-color);
+  font-weight: 600;
+  /*transition: 0.5s;*/
 }
 
 .button:hover .arrow{
-  border-color: rgba(251, 232, 153, 1);
-  color: black;
+  border-color: var(--secondary-color)!important;
+  color: var(--secondary-color)!important;
   font-weight: bold;
   transform: rotate( 90deg);
+  transition: 0.5s;
 }
 
 .arrow {

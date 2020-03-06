@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  height: calc(100vh + 50px);
+  height: calc(100vh + 53px);
   width: 100%;
   background-image:  linear-gradient(rgba(100,100,100,0.35), rgba(100,100,100,0.35)),
   url('../../images/rwfog.jpg');
@@ -96,7 +96,7 @@ section .container {
 
 /*---------------------ABOUT--------=-------------*/
 #about {
-  color: #5c5c5c;
+  color: var(--main-color);
   position: relative;
 }
 
@@ -167,7 +167,7 @@ section .container {
 }
 
 .header h2{
-  color: rgba(211, 129, 56, 1);
+  color: var(--main-color);
   font-size: 3.5em;
   margin: 0;
   font-weight: lighter;
@@ -206,7 +206,7 @@ section .container {
   color: white;
   padding: 4px 8px;
   border-radius: 5px;
-  background-color: rgba(211, 129, 56, 1);
+  background-color: var(--accent-color);
   text-shadow: 1px 1px 4px #000000;
 }
 
@@ -358,35 +358,31 @@ button {
 }
 
 .podfast {
-  background-color: rgb(234, 120, 91);
+  background-color: var(--secondary-color);
 }
 
-.podfast-btn {
-  background-color: rgb(238, 238, 238);
-}
-
-.nomad-btn {
-  background-color: rgb(238, 238, 238);
+.project-btn {
+  background-color: var(--off-white);
+  font-family: 'Poppins', sans-serif;
+  line-height: 0;
 }
 
 .nomad {
-  background-color: rgb(44, 70, 67);
- /* display: none !important;*/
+  background-color: var(--secondary-color);
 }
 
 .tab-content {
   border-radius: 0 0 5px 5px;
   width: 100%;
   height: 100%;
-  background-color: #eee;
+  background-color: rgba(235,235,235);
   display: flex;
   flex-direction: row;
 }
 
 .left-content {
   width: 25%;
-  /* height: 100%; */
-  color: #5c5c5c;
+  color: var(--main-color);
   line-height: 1.2em;
   font-size: 1em;
   padding: 2%;
@@ -418,7 +414,7 @@ button {
   width: 100%;
 }
 
-.card-info-onclick {
+.card-info {
   position: absolute;
   border-radius: 5px;
   top: 0%;
@@ -434,17 +430,17 @@ button {
   text-align: left;
 }
 
-.card-info-onclick:active {
+.card-info:active {
   opacity: 1;
   transition: 1s;
 }
 
-.card-info-onclick:focus {
+.card-info:focus {
   opacity: 1;
   transition: 1s;
 }
 
-.card-info-onclick:hover {
+.card-info:hover {
   opacity: 1;
   transition: 1s;
 }
@@ -485,14 +481,9 @@ button {
   box-shadow: 0px 0px 10px #CDCDCD;
 }
 
-.podfast-link{
+.link{
   text-decoration: underline;
-  color: gray;
-}
-
-.nomad-link {
-  text-decoration: underline;
-   color:gray;
+  color: var(--sub-accent-color);
 }
 
 .nomad-content {
@@ -512,6 +503,7 @@ button {
 
 
 .web-img {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
 }
