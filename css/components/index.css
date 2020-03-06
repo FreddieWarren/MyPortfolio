@@ -3,6 +3,9 @@
 @import "button.css";
 @import "nav.css";
 @import "hexagon.css";
+@import "home.css";
+@import "about.css";
+@import "projects.css";
 
 
 :root {
