@@ -194,7 +194,7 @@ button {
   color: var(--sub-accent-color);
 }
 
-/*@media (min-width: 992px) {
+/*/*@media (min-width: 992px) {
   .nomad-mobile-example .nomad-img {
     height: 200px;
     width: 350px;
@@ -216,17 +216,40 @@ button {
   }
 }*/
 
-/*@media screen and (min-width: 600px) {
+
+@media screen and (max-width: 600px) {
+  button {
+    font-size: 25px;
+  }
   .left-content {
     width: 100%;
-    font-size: 1em;
+    font-size: 55%;
   }
   .right-content {
+    padding: 10px 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
   }
+  .podfast-mobile-example {
+    height: 56vw;
+    width: 28vw;
+    margin: 3%;
+  }
+  .nomad-mobile-example {
+    height: 35vw;
+    width: 59vw;
+    max-width: 60vw;
+    margin: 2%;
+  }
+  .card-info {
+    font-size: 34%;
+  }
+  .tab-content {
+    display: block;
+  }
 }
+
 
 @media screen and (min-width: 1500px) {
   .nomad-mobile-example {
@@ -239,45 +262,5 @@ button {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .project-tabs {
-    height: unset;
-  }
-  .tab-panel {
-    height: unset;
-  }
-  .tab-content {
-    display: block;
-    padding-bottom: 7%;
-  }
-  .nomad-mobile-example {
-   /* height: 19vw;
-    width: 34vw;
-    max-width: 60vw;
-    margin: 2%;
-  }
-  .podfast-mobile-example {
-    height: 36vw;
-    width: 18vw;
-    margin: 2%;
-  }
-  .left-content {
-    width: 100%;
-    font-size: 16px;
-    padding: 0 42px 6%;
-  }
-  .right-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .project-btn {
-    font-size: 22px;
-  }
-  .button-container {
-    height: 54px;
-  }
-  .card-info {
-    font-size: 35%;
-  }
-}
+
+
