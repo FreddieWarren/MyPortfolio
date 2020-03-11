@@ -23,6 +23,8 @@
 .contact-title {
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: center;
+  width: 100%;
 }
 
 .icon-container {

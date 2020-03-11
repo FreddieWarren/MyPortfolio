@@ -26,6 +26,12 @@ for (var i = 0; i < anchors.length; i++){
 }
 });
 
+function hideMenu() {
+  $(".mob-link").click(function(){
+    $(".mobile-nav-menu").css("display","none");
+  });
+}
+
 // SCROLL ON NAV/BUTTONS
 $(".about-btn").click(function() {
   $([document.documentElement, document.body]).animate({
@@ -33,6 +39,7 @@ $(".about-btn").click(function() {
   }, 1000);
 });
 
+$(".mob-link").click(hideMenu())
 $(".about-btn-nav").click(function() {
   $([document.documentElement, document.body]).animate({
     scrollTop: $("#about").offset().top
@@ -42,7 +49,7 @@ $(".about-btn-nav").click(function() {
 $(".home-btn-nav").click(function() {
   $([document.documentElement, document.body]).animate({
     scrollTop: $("#home").offset().top
-  }, 1000);
+  }, 1000) ;
 });
 
 $(".project-btn-nav").click(function() {
@@ -56,3 +63,9 @@ $(".contact-btn-nav").click(function() {
     scrollTop: $("#contact").offset().top
   }, 1000);
 });
+
+//TOGGLE NAV MENU FOR MOBILE
+$(".fa-bars").click(function(){
+  $(".mobile-nav-menu").toggle(".nav-visible");
+});
+

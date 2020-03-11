@@ -125,7 +125,7 @@ button {
   color: white;
   height: 100%;
   width: 100%;
-  font-size: 14px;
+  font-size: 1.5vh;
   text-align: left;
 }
 
@@ -194,6 +194,11 @@ button {
   color: var(--sub-accent-color);
 }
 
+.podfast-link {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*/*@media (min-width: 992px) {
   .nomad-mobile-example .nomad-img {
     height: 200px;
@@ -217,7 +222,7 @@ button {
 }*/
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   button {
     font-size: 25px;
   }
@@ -226,7 +231,7 @@ button {
     font-size: 55%;
   }
   .right-content {
-    padding: 10px 0;
+    padding: 7% 0 9%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -243,7 +248,7 @@ button {
     margin: 2%;
   }
   .card-info {
-    font-size: 34%;
+    font-size: 1.3vh;
   }
   .tab-content {
     display: block;
