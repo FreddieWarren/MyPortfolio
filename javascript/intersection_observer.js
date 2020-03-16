@@ -5,7 +5,7 @@ const sectionProject = document.querySelector(".project-container")
 
 const options = {
   root: null,     //it is the viewport
-  threshold: 0.2, // 0 => 1 scale
+  threshold: 0.3, // 0 => 1 scale
   // rootMargin: if you want set margins to the viewport, you can write is as css margin values
 };
 

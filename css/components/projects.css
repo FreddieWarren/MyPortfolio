@@ -256,6 +256,39 @@ button {
 }
 
 
+@media screen and (max-width: 1199px) and (min-width: 769px) {
+    button {
+    font-size: 25px;
+  }
+  .left-content {
+    width: 100%;
+    font-size: 80%;
+  }
+  .right-content {
+    padding: 7% 0 9%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .podfast-mobile-example {
+    height: 36vw;
+    width: 18vw;
+    margin: 3%;
+  }
+  .nomad-mobile-example {
+    height: 25vw;
+    width: 46vw;
+    max-width: 60vw;
+    margin: 2%;
+  }
+  .card-info {
+    font-size: 1.3vh;
+  }
+  .tab-content {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1500px) {
   .nomad-mobile-example {
     height: 13vw;
