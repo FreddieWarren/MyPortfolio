@@ -251,7 +251,7 @@ button {
     font-size: 1.3vh;
   }
   .tab-content {
-    display: block;
+      display: block;
   }
 }
 
