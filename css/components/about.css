@@ -3,6 +3,33 @@
   position: relative;
 }
 
+.profile-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -170px;
+  margin-top:-125px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 5em 0;
+}
+
+.about-content-left {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.about-content-right {
+  position: relative;
+  min-width: 350px;
+}
+
 .hobbies-banner {
   color: white;
   font-weight: bold;
@@ -33,12 +60,13 @@
 }
 
 #about .header {
+  display: flex;
   width:100%;
 }
 
 .header h2{
   color: var(--main-color);
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin: 0;
   font-weight: lighter;
 }
@@ -77,14 +105,16 @@
 }
 
 .about-desc {
-  line-height: 1.8em;
-  text-align: justify;
+  font-size: .9em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.85em;
+  /* text-align: justify; */
   margin-bottom: 20px;
   padding: 0;
 }
 
 .about-desc p {
-  margin-top: 0.5%;
+  margin: 0;
 }
 
 .skill-pills {
@@ -94,6 +124,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 5em;
  }
 
 .pill {
@@ -102,7 +133,8 @@
   color: white;
   padding: 4px 8px;
   border-radius: 5px;
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
+  background: #b70100;
   text-shadow: 1px 1px 4px #000000;
 }
 
@@ -124,7 +156,7 @@
 
 @media (min-width: 1200px){
   .container {
-    max-width: 55%;
+    max-width: 60%;
   }
 }
 

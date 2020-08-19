@@ -1,3 +1,7 @@
+body {
+  background: rgba(235,235,235);
+}
+
 #projects {
   min-height: 100vh;
   /*width: 100vw;*/
@@ -35,13 +39,15 @@
 }
 
 .button-container {
+  display:grid;
+  grid-template-columns: auto auto auto;
   height: 54px;
 }
 
 button {
   text-shadow: 1px 1px 4px #000000;
   color: white;
-  width: 50%;
+  width: 100%;
   height: 100%;
   float: left;
   border: transparent;
@@ -125,7 +131,7 @@ button {
   color: white;
   height: 100%;
   width: 100%;
-  font-size: 1.5vh;
+  font-size: 1.4vh;
   text-align: left;
 }
 
@@ -170,7 +176,8 @@ button {
   transition: 0.5s;
 }
 
-.nomad-mobile-example {
+.nomad-example {
+  display: flex;
   width: 23vw;
   position: relative;
   border-radius: 5px;
@@ -181,6 +188,17 @@ button {
   box-shadow: 0px 0px 10px #CDCDCD;
 }
 
+.techworld-example {
+  display: flex;
+  width: 23vw;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 3%;
+  color: grey;
+  transition: 1s;
+  box-shadow: 0px 0px 10px #CDCDCD;
+}
 
 .nomad-img {
   border-radius: 5px;
@@ -199,32 +217,9 @@ button {
   justify-content: space-between;
 }
 
-/*/*@media (min-width: 992px) {
-  .nomad-mobile-example .nomad-img {
-    height: 200px;
-    width: 350px;
-  }
-}
-
-@media screen and (min-width: 1150px) {
-  .nomad-mobile-example {
-    margin: 1.5%;
-  }
-
-  .nomad-mobile-example img {
-    height: 200px;
-  }
-
-  .nomad-mobile-example .nomad-img {
-    height: 175px;
-    width: 325px;
-  }
-}*/
-
-
 @media screen and (max-width: 768px) {
   button {
-    font-size: 25px;
+    font-size: 0.9em;
   }
   .left-content {
     width: 100%;
@@ -241,7 +236,13 @@ button {
     width: 28vw;
     margin: 3%;
   }
-  .nomad-mobile-example {
+  .nomad-example {
+    height: 35vw;
+    width: 59vw;
+    max-width: 60vw;
+    margin: 2%;
+  }
+  .techworld-example {
     height: 35vw;
     width: 59vw;
     max-width: 60vw;
@@ -275,7 +276,13 @@ button {
     width: 18vw;
     margin: 3%;
   }
-  .nomad-mobile-example {
+  .nomad-example {
+    height: 25vw;
+    width: 46vw;
+    max-width: 60vw;
+    margin: 2%;
+  }
+  .techworld-example {
     height: 25vw;
     width: 46vw;
     max-width: 60vw;
@@ -290,7 +297,12 @@ button {
 }
 
 @media screen and (min-width: 1500px) {
-  .nomad-mobile-example {
+  .nomad-example {
+    height: 13vw;
+    width: 23vw;
+    margin: 1.5%;
+  }
+  .techworld-example {
     height: 13vw;
     width: 23vw;
     margin: 1.5%;

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
 
   <body class="body">
@@ -49,35 +50,45 @@
     <!-- ABOUT -->
     <div id="about" class="section">
       <div class="container about-container">
-        <div class="flex header">
-          <h2>ABOUT</h2>
-        </div>
-        <div class="about-content">
-          <div class=" flex profile-image">
-            <div class="hex-center">
-              <div class="hexagon hexagonmain"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>
+        <div>
+          <div class="about-content">
+            <div class="about-content-right">
+              <div class="profile-image">
+                <div class="hex-center">
+                  <div class="hexagon hexagonmain"><div class="hexagon-in1"><div class="hexagon-in2"></div></div></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="sub-heading">
-            <p>Who's this guy?</p>
-          </div>
-          <div class="about-me">
-            <div class=" col-sm-12 col-lg-12 about-desc">
-              <p>Prior to becoming a <strong>Full Stack Developer</strong> I spent 3 years as a <strong>Professional Footballer</strong> and another year as a recruiter within the Financial & <strong>Tech industry</strong>. This made me curious, and after learning more about Development and the Tech industry, I realised how well my skill set compliments the work. This is when I decided to enroll on the <strong>Full Stack Development programme</strong>  with <strong>Le Wagon London</strong>. Since finishing at Le Wagon I have realised I really enjoy <strong>Front-end development</strong> and I am now learning <strong>React</strong> and <strong>Javascript</strong> in more depth, which I'd be very keen to start working with.</p>
-            </div>
+            <div class="about-content-left">
+              
+                <div class="header">
+                  <h2>Who's this guy?</h2>
+                </div>
+              
+              <div class="about-me">
+                <div class=" col-sm-12 col-lg-12 about-desc">
+                  <p>Prior to becoming a Full Stack Developer I spent 3 years as a Professional Footballer and another year as a recruiter within the Financial & Tech industry. This made me curious, and after learning more about Development and the Tech industry, I realised how well my skill set compliments the work. This is when I decided to enroll on the Full Stack Development programme  with Le Wagon London. Since finishing at Le Wagon I have realised I really enjoy Front-end development and I am now learning React and Javascript in more depth, which I'd be very keen to start working with.</p>
+                </div>
+              </div>
+
+            </div> 
+    
           </div>
           <div class="skill-pills">
-            <div class="pill">Ruby on Rails</div>
+            <div class="pill">React</div>
+            <div class="pill">NodeJS</div>
             <div class="pill">Javascript ES6</div>
             <div class="pill">HTML/5</div>
             <div class="pill">CSS/SCSS</div>
+            <div class="pill">Ruby on Rails</div>
             <div class="pill">APIs and JSON</div>
-            <div class="pill">PostgreSQL</div>
             <div class="pill">Figma</div>
             <div class="pill">GitHub</div>
-            <div class="pill">AJAX</div>
+            
             <div class="pill">Git</div>
           </div>
+
+        
         </div>
         <div class="flex hobbies">
           <div class="flex hobbie-heading">Other interests</div>
@@ -115,10 +126,10 @@
         </div>
         <div class="project-tabs show-on-scroll">
           <div class="button-container">
-            <button class="project-btn" onclick="showPanel(0,'var(--secondary-color)')" >Podfast</button>
+            <button class="project-btn grid-item" onclick="showPanel(0,'var(--secondary-color)')" >Podfast</button>
             <button class="project-btn" onclick="showPanel(1,'var(--secondary-color)')">Nomad</button>
+            <button class="project-btn" onclick="showPanel(2,'var(--secondary-color)')">TechWorld</button>
           </div>
-
           <div class="tab-panel flex">
             <div class="tab-content">
               <div class="col-md-12 col-xl-4 left-content">
@@ -178,32 +189,72 @@
                 <a class="link" href="https://nomad-joeolley.herokuapp.com" target="_blank">Go to App</a>
               </div>
               <div class="col-md-12 col-xl-8 right-content project-examples">
-                <div class="nomad-mobile-example">
+                <div class="nomad-example">
                   <img class="nomad-img" src="images/nomad/Nomad_1.png" alt="">
                   <div class="card-info">
                     <h4>Search</h4>
                     <p>The home page of the app, where users can search for accomodation by location.</p>
                   </div>
                 </div>
-                <div class="nomad-mobile-example">
+                <div class="nomad-example">
                   <img class="nomad-img" src="images/nomad/Nomad_2.png" alt="">
                   <div class="card-info">
                     <h4>List</h4>
                     <p>Accomodation is listed adjacent to a map, which has markers and info cards to show facilities and distance from the search address.</p>
                   </div>
                 </div>
-                <div class="nomad-mobile-example">
+                <div class="nomad-example">
                   <img class="nomad-img" src="images/nomad/Nomad_3.png" alt="">
                   <div class="card-info">
                     <h4>Choose</h4>
                     <p>Users can see more details of the selected accomodation, including reviews and request to book.</p>
                   </div>
                 </div>
-                <div class="nomad-mobile-example">
+                <div class="nomad-example">
                   <img class="nomad-img" src="images/nomad/Nomad_5.png" alt="">
                   <div class="card-info">
                     <h4>Dashboard</h4>
                     <p>Users can see their upcoming bookings and review previous stays.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel flex" style="display: none; background-color: var(--secondary-color);">
+            <div class="tab-content">
+              <div class="col-md-12 col-xl-4 left-content">
+                <p><strong>TechWorld</strong> is an Responsive E-commerce site with basket management built using React , hooks, Nodejs, GraphQL, Express, local storage, MongoDB, SASS, HTML and Bootstrap</p>
+                <div class="podfast-link">
+                  <a class="link" href="https://techworld-client.herokuapp.com/" target="_blank">Go to App</a>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-8 right-content project-examples">
+                <div class="techworld-example">
+                  <img class="nomad-img" src="images/techworld/tw1.PNG" alt="">
+                  <div class="card-info">
+                    <h4>Home</h4>
+                    <p>The home page of the app, where users can browse the products available.</p>
+                  </div>
+                </div>
+                <div class="techworld-example">
+                  <img class="nomad-img" src="images/techworld/tw4.PNG" alt="">
+                  <div class="card-info">
+                    <h4>Product Information</h4>
+                    <p>Users can see more information on the specific product they are interested in. Item's can be added to basket from the modal or the home page.</p>
+                  </div>
+                </div>
+                <div class="techworld-example">
+                  <img class="nomad-img" src="images/techworld/tw2.PNG" alt="">
+                  <div class="card-info">
+                    <h4>Basket</h4>
+                    <p>The basket allows a user to remove one product at a time or to clear all at once.</p>
+                  </div>
+                </div>
+                <div class="techworld-example">
+                  <img class="nomad-img" src="images/techworld/tw3.PNG" alt="">
+                  <div class="card-info">
+                    <h4>Contact</h4>
+                    <p>Contact form for support and customers services.</p>
                   </div>
                 </div>
               </div>
