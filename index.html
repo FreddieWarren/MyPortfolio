@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
 
   <body class="body">
@@ -67,7 +68,7 @@
               
               <div class="about-me">
                 <div class=" col-sm-12 col-lg-12 about-desc">
-                  <p>Prior to becoming a Full Stack Developer I spent 3 years as a Professional Footballer and another year as a recruiter within the Financial & Tech industry. This made me curious, and after learning more about Development and the Tech industry, I realised how well my skill set compliments the work. This is when I decided to enroll on the Full Stack Development programme  with Le Wagon London. Since finishing at Le Wagon I have realised I really enjoy Front-end development and I am now learning React and Javascript in more depth, which I'd be very keen to start working with.</p>
+                  <p>Prior to becoming a <strong> Full Stack Developer </strong> I spent 3 years as a Professional Footballer and another year as a recruiter within the Financial & Tech industry. This made me curious, and after learning more about Development and the Tech industry, I realised how well my skill set compliments the work. This is when I decided to enroll on the <strong> Stack Development programme</strong>  with Le Wagon London. Since finishing at Le Wagon I have realised I really enjoy Front-end development and I am now learning <strong>  React</strong> and <strong>JavaScript </strong>in more depth, which I've now started using on two of my most recent projects.</p>
                 </div>
               </div>
 
@@ -122,13 +123,53 @@
     <div id="projects" class="section">
       <div class="project-container">
         <div>
-          <h1 class="project-title"> My Projects </h1>
+          <h1 class="project-title"> Projects </h1>
         </div>
         <div class="project-tabs show-on-scroll">
           <div class="button-container">
-            <button class="project-btn grid-item" onclick="showPanel(0,'var(--secondary-color)')" >Podfast</button>
-            <button class="project-btn" onclick="showPanel(1,'var(--secondary-color)')">Nomad</button>
-            <button class="project-btn" onclick="showPanel(2,'var(--secondary-color)')">TechWorld</button>
+            <button class="project-btn" onclick="showPanel(0,'White')">TechWorld <span class="iconify" data-icon="bx:bxl-react" data-inline="false"></span></button>
+            <button class="project-btn grid-item" onclick="showPanel(1,'white')" >Podfast <span class="iconify" data-icon="mdi:language-ruby-on-rails" data-inline="false"></span></button>
+            <button class="project-btn" onclick="showPanel(2,'white')">Nomad <span class="iconify" data-icon="mdi:language-ruby-on-rails" data-inline="false"></span></button>
+          </div>
+          <div class="tab-panel flex" style="display: none; background-color: white">
+            <div class="tab-content">
+              <div class="col-md-12 col-xl-4 left-content">
+                <p><strong>TechWorld</strong> is an Responsive E-commerce site with basket management built using React , hooks, Nodejs, GraphQL, Express, local storage, MongoDB, SASS, HTML and Bootstrap</p>
+                <div class="podfast-link">
+                  <a class="link" href="https://techworld-client.herokuapp.com/" target="_blank">Go to App</a>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-8 right-content project-examples">
+                <div class="techworld-example">
+                  <img class="nomad-img" src="images/techworld/tw1.PNG" alt="">
+                  <div class="card-info">
+                    <h4>Home</h4>
+                    <p>The home page of the app, where users can browse the products available.</p>
+                  </div>
+                </div>
+                <div class="techworld-example">
+                  <img class="nomad-img" src="images/techworld/tw4.PNG" alt="">
+                  <div class="card-info">
+                    <h4>Product Information</h4>
+                    <p>Users can see more information on the specific product they are interested in. Item's can be added to basket from the modal or the home page.</p>
+                  </div>
+                </div>
+                <div class="techworld-example">
+                  <img class="nomad-img" src="images/techworld/tw2.PNG" alt="">
+                  <div class="card-info">
+                    <h4>Basket</h4>
+                    <p>The basket allows a user to remove one product at a time or to clear all at once.</p>
+                  </div>
+                </div>
+                <div class="techworld-example">
+                  <img class="nomad-img" src="images/techworld/tw3.PNG" alt="">
+                  <div class="card-info">
+                    <h4>Contact</h4>
+                    <p>Contact form for support and customers services.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="tab-panel flex">
             <div class="tab-content">
@@ -220,46 +261,7 @@
               </div>
             </div>
           </div>
-          <div class="tab-panel flex" style="display: none; background-color: var(--secondary-color);">
-            <div class="tab-content">
-              <div class="col-md-12 col-xl-4 left-content">
-                <p><strong>TechWorld</strong> is an Responsive E-commerce site with basket management built using React , hooks, Nodejs, GraphQL, Express, local storage, MongoDB, SASS, HTML and Bootstrap</p>
-                <div class="podfast-link">
-                  <a class="link" href="https://techworld-client.herokuapp.com/" target="_blank">Go to App</a>
-                </div>
-              </div>
-              <div class="col-md-12 col-xl-8 right-content project-examples">
-                <div class="techworld-example">
-                  <img class="nomad-img" src="images/techworld/tw1.PNG" alt="">
-                  <div class="card-info">
-                    <h4>Home</h4>
-                    <p>The home page of the app, where users can browse the products available.</p>
-                  </div>
-                </div>
-                <div class="techworld-example">
-                  <img class="nomad-img" src="images/techworld/tw4.PNG" alt="">
-                  <div class="card-info">
-                    <h4>Product Information</h4>
-                    <p>Users can see more information on the specific product they are interested in. Item's can be added to basket from the modal or the home page.</p>
-                  </div>
-                </div>
-                <div class="techworld-example">
-                  <img class="nomad-img" src="images/techworld/tw2.PNG" alt="">
-                  <div class="card-info">
-                    <h4>Basket</h4>
-                    <p>The basket allows a user to remove one product at a time or to clear all at once.</p>
-                  </div>
-                </div>
-                <div class="techworld-example">
-                  <img class="nomad-img" src="images/techworld/tw3.PNG" alt="">
-                  <div class="card-info">
-                    <h4>Contact</h4>
-                    <p>Contact form for support and customers services.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
