@@ -42,13 +42,12 @@ nav {
   color: var(--sub-accent-color);
   cursor: pointer;
 }
-`
+
 .active {
-  /*font-size: 1.1em;*/
   transition: .2s;
   color: var(--accent-color);
-  text-decoration: underline;
-  /* border-bottom: 3px solid var(--accent-color); */
+  /* text-decoration: underline; */
+  border-bottom: 3px solid #b70100;
 }
 
 .mob-nav-active {
