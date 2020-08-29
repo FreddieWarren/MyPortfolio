@@ -100,6 +100,10 @@ button {
   justify-content: center;
 }
 
+.project-title-bold {
+    font-weight: 600;
+}
+
 .right-content {
   width: 70%;
   justify-content: center;
@@ -230,6 +234,7 @@ button {
     width: 100%;
     font-size: 55%;
   }
+
   .right-content {
     padding: 7% 0 9%;
     width: 100%;
