@@ -63,7 +63,7 @@
 
 .custom-btn {
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   font-size:  0.8em;
   width: 140px;
   height: 40px;
