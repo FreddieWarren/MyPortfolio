@@ -33,15 +33,6 @@
   font-size: 13px;
 }
 
-@media screen and (max-width: 600px) {
-  .button-main {
-    padding: 4px 8px;
-  }
-  .button {
-    font-size: 12px;
-  }
-}
-
 .button-down {
   border-radius: 50%;
   width: fit-content;
@@ -70,3 +61,41 @@
   transform: rotate( 90deg);
 }
 
+.custom-btn {
+  align-items: center;
+  justify-items: center;
+  font-size:  0.8em;
+  width: 140px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-main {
+  background: linear-gradient(0deg, var(--accent-color) 0%, rgba(126, 37, 31, 1) 100%);
+  border: none;
+}
+.btn-main:hover {
+  background: linear-gradient(0deg, rgba(100, 11, 6, 1) 0%, rgba(100, 11, 6, 1) 100%);
+}
+
+@media screen and (max-width: 600px) {
+  .about-btn{
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 4px 8px;
+    height: 30px;
+  }
+}
